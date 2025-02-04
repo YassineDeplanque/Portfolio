@@ -8,7 +8,7 @@ export const Home = () => {
             <div className="text-container">
                 <h1 className="home-title">Bienvenue sur mon Portfolio !</h1>
                 <h3 className="home-subtitle">
-                    Deplanque Yassine <strong className="metier">Étudiant en BTS SIO</strong>
+                    Deplanque Yassineeeaaa <strong className="metier">Étudiant en BTS SIO</strong>
                 </h3>
             </div>
             <div className="image-container">
