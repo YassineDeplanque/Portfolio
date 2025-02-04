@@ -12,7 +12,7 @@ export const Home = () => {
                 </h3>
             </div>
             <div className="image-container">
-                <img className="profile-image" src={img} alt={img} />
+                <img className="profile-image" src="https://m.media-amazon.com/images/I/51RXFkMDSyL._AC_UF1000,1000_QL80_.jpg" alt={img} />
             </div>
         </div>
     );
