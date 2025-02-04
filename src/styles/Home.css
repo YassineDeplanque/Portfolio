@@ -1,15 +1,16 @@
 .home-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     height: 100vh;
     padding: 0 40px;
-    /* background-color: #f4f4f4; */
+    text-align: center;
 }
 
 .text-container {
-    max-width: 50%;
-    margin-left: 7%;
+    max-width: 70%;
+    margin: 0 auto;
 }
 
 .home-title {
@@ -29,24 +30,7 @@
 
 .metier {
     font-style: italic;
-    color: #2C3E50;
-}
-
-.image-container {
-    max-width: 45%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 7%;
-}
-
-.profile-image {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    object-fit: cover;
-    animation: slideInImg 2.5s ease-in;
+    color: #361957;
 }
 
 @keyframes fadeIn {
@@ -90,6 +74,3 @@
         opacity: 1;
     }
 }
-
-
-

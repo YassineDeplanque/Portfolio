@@ -9,7 +9,7 @@
 .title {
     font-size: 24px;
     font-weight: bold;
-    color: #ffffff;
+    color: #443577;
     margin-bottom: 20px;
 }
 
@@ -56,6 +56,9 @@
 .java {color: #E61F24;}
 .python {color: #000000;}
 .sql {color: #005D88;}
+.git {color: #000000;}
+.express {color: #F7DF1E}
+.linux {color: #000000;}
 
 .skill-info h3 {
     font-size: 18px;

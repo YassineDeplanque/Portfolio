@@ -3,24 +3,29 @@
     margin: 10px;
     padding: 0;
     top: 0;
-    position: absolute;
     right: 0;
     display: flex;
     gap: 20px;
+    position: fixed;
 }
 
 .navbar-ul li {
-    color: #ffffff;
+    color: #361957;
     font-size: 1.2rem;
-    padding: 10px;
+    padding: 20px;
     cursor: pointer;
     position: relative;
-    font-weight: 500;
+    font-weight: bold;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .navbar-ul li:hover {
-    color: #d3c1af;
+    color: #ffffff;
+    transform: translateY(-5px);
+}
+
+.navbar-ul li:hover {
+    color: #ffffff;
     transform: translateY(-5px);
 }
 
@@ -31,7 +36,7 @@
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: #d3c1af;
+    background-color: #ffffff;
     transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.3s ease;
@@ -51,3 +56,85 @@
     animation: bounce 0.5s ease-in-out;
 }
 
+@media screen and (max-width: 768px) {
+    .menu-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 900;
+        display: none;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .menu-overlay.active {
+        display: block;
+        opacity: 1;
+    }
+
+    .navbar-ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        height: 100vh;
+        background-color: #361957;
+        box-shadow: -4px 0px 10px rgba(0, 0, 0, 0.3);
+        transition: right 0.3s ease-in-out;
+        z-index: 1000;
+        display: flex;
+    }
+
+    .navbar-ul.active {
+        right: 0;
+    }
+
+    .navbar-ul li {
+        font-size: 1.8rem;
+        padding: 20px;
+        color: white;
+        text-align: center;
+        width: 100%;
+        transition: background 0.3s ease;
+    }
+
+    .navbar-ul li:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .burger-menu {
+        display: block;
+        position: fixed;
+        top: 15px;
+        right: 20px;
+        cursor: pointer;
+        z-index: 1100;
+    }
+
+    .burger-bar {
+        display: block;
+        width: 35px;
+        height: 4px;
+        margin: 6px auto;
+        background-color: white;
+        transition: 0.3s;
+    }
+
+    .burger-bar.open:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 6px);
+    }
+
+    .burger-bar.open:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger-bar.open:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -6px);
+    }
+}
