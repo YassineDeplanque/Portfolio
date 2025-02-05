@@ -8,7 +8,7 @@ export const Footer = () => {
             <div className="footer-content">
                 <p className="footer-text">Mes réseaux</p>
                 <div className="footer-icons">
-                    <a href="https://www.linkedin.com/in/ton-profil" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/yassine-deplanque-59265b34b/" target="_blank" rel="noopener noreferrer">
                         <FaLinkedin className="footer-icon" />
                     </a>
                     <a href="https://github.com/YassineDeplanque" target="_blank" rel="noopener noreferrer">
