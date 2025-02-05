@@ -92,4 +92,34 @@
     max-width: 300px;
     height: auto;
     border-radius: 8px;
+    cursor: pointer;
   }
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-image {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+/* Le reste de votre CSS pour la grille des projets */
+.project-image {
+    cursor: pointer;
+}
+
+/* Pour afficher un effet de survol */
+.project-image:hover {
+    opacity: 0.7;
+}
