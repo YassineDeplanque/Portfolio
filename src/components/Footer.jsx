@@ -10,7 +10,6 @@ export const Footer = () => {
             const scrollPosition = window.scrollY + window.innerHeight;
             const pageHeight = document.documentElement.scrollHeight;
 
-            // Affiche le footer seulement quand on est au bas de la page
             if (scrollPosition >= pageHeight - 10) {
                 setShowFooter(true);
             } else {
