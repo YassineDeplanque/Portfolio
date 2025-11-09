@@ -1,8 +1,29 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import '../styles/Footer.css';
 
 export const Footer = () => {
+    const [showFooter, setShowFooter] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollPosition = window.scrollY + window.innerHeight;
+            const pageHeight = document.documentElement.scrollHeight;
+
+            // Affiche le footer seulement quand on est au bas de la page
+            if (scrollPosition >= pageHeight - 10) {
+                setShowFooter(true);
+            } else {
+                setShowFooter(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+
     return (
         <footer className="footer">
             <div className="footer-content">
