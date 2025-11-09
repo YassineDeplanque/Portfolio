@@ -13,15 +13,15 @@ export const About = () => {
                 <div className="education">
                     <div className="education-item">
                     <FaGraduationCap className="icon"/>
-                        <h3>Ingénieur  informatique - Futur</h3>
-                        <p>Établissement : Inconnu à l'heure actuelle</p>
-                        <p>Spécialité : Inconnue à l'heure actuelle</p>
+                        <h3>Ingénieur  informatique - 2025 - 2028</h3>
+                        <p>Établissement : Polytech Lille</p>
+                        <p>Spécialité : Informatique, statistiques et intelligence artificielle.</p>
                     </div>
                     <div className="education-item">
                     <FaGraduationCap className="icon"/>
                         <h3>BTS SIO - 2025</h3>
                         <p>Établissement : Lycée Jean Bart, Dunkerque</p>
-                        <p>Spécialité : SLAM (Solutions Logicielles et Applications Métiers) et Maths approfondies</p>
+                        <p>Spécialité : Développemnt et Maths approfondies</p>
                     </div>
                     <div className="education-item">
                     <FaGraduationCap className="icon"/>
@@ -76,10 +76,15 @@ export const About = () => {
                 <div className="about-container">
                 <h2>Expériences</h2>
                 <div className="education">
+                     <div className="education-item">
+                    <FaUserFriends className="icon"/>
+                        <h3>Software engineer - Apprentice</h3>
+                        <p>Chez Decathlon Digital, j'ai pu participer à du développement ABAP et Fiori, mais aussi mettre en place des pipelines CI/CD, et manipuler des données avec des services OData et du SQL.</p>
+                    </div>
                     <div className="education-item">
                     <FaLaptopCode className="icon"/>
-                        <h3>Stage DevOps</h3>
-                        <p>10 semaines de stage à la mairie de ma ville durant lesquelles j'ai pu développer deux applications web fullstack avec React et les déployer avec Docker.</p>
+                        <h3>Software developer - Intern</h3>
+                        <p>10 semaines de stage à la mairie de ma ville durant lesquelles j'ai pu développer deux applications web fullstack avec React/Node et les déployer avec Docker/Jenkins.</p>
                     </div>
                     <div className="education-item">
                     <FaUserFriends className="icon"/>
