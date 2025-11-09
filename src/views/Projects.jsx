@@ -15,8 +15,27 @@ import calendar from '../assets/calendar.png'
 import miniCalendar from '../assets/miniCalendar.png'
 import etiquette from '../assets/etiquette.png'
 import etiquetteSearch from '../assets/etiquetteSearch.png'
+import graphScreen from '../assets/graphScreen.PNG'
+import trackScreen from '../assets/trackScreen.PNG'
 
 const projects = [
+        { 
+        title: "BlueTrack", 
+        img: "https://www.weodeo.com/wp-content/uploads/2021/12/reseau-informatique-scaled-1.jpeg", 
+        description: "Gestionnaire de finance, avec authentification, envoi de mail, graphiques et gestion des données.",
+        details: {
+            content: "Bluetrack permet d'enregistrer et de comparer ses revenus et ses dépenses, afin de mieux gérer son argent. Il y a aussi tout un système d'authentification, avec un hachage des mots de passe. Les utilisateurs pourront aussi me prévenir d'idées ou de bug, avec un formulaire qui m'envoie par mail leurs commentaires.    ",
+            images: [
+                graphScreen, 
+                trackScreen
+            ],
+            techIcons: [
+                <FaReact size={40} />,
+                <FaNodeJs size={40} />,
+                <SiExpress size={40} />
+            ]
+        }
+    },
     { 
         title: "Calendrier", 
         img: "https://www.weodeo.com/wp-content/uploads/2021/12/reseau-informatique-scaled-1.jpeg", 
@@ -67,23 +86,6 @@ const projects = [
                 <FaPhp size={40} />,
                 <FaJsSquare size={40} />,
                 <FaJava size={40} />
-            ]
-        }
-    },
-    { 
-        title: "Blog", 
-        img: "https://www.weodeo.com/wp-content/uploads/2021/12/reseau-informatique-scaled-1.jpeg", 
-        description: "Blog simple permettant aux utilisateurs de publier, commenter et gérer leurs articles. Il offre des fonctionnalités comme la pagination et l'authentification des utilisateurs.",
-        details: {
-            content: "Ce blog permet aux utilisateurs de créer, gérer et interagir avec leurs articles, en offrant des fonctionnalités comme la gestion des comptes, des articles et des commentaires. Il y a diverses autres fonctions, comme la recherche ou un formulaire de contact avec envoi de mail.",
-            images: [
-                aviationSearch, 
-                aviationForm
-            ],
-            techIcons: [
-                <FaHtml5 size={40} />,
-                <FaCss3Alt size={40} />,
-                <FaPhp size={40} />
             ]
         }
     },
