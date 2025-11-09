@@ -1,5 +1,3 @@
-import React from "react";
-import { PieChart, Pie, Cell, Tooltip } from "recharts";
 import { FaHtml5, FaCss3Alt, FaJs, FaPhp, FaReact, FaNodeJs, FaDocker, FaJenkins, FaJava, FaPython, FaGitAlt } from "react-icons/fa";
 import { SiCplusplus, SiMysql, SiExpress } from "react-icons/si";
 import { FcLinux } from "react-icons/fc";

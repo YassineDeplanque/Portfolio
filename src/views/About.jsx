@@ -1,4 +1,3 @@
-import React from "react";
 import '../styles/About.css';
 import { FaGraduationCap, FaBasketballBall, FaUtensils, FaPlane, FaTools, FaLaptopCode, FaUserFriends } from 'react-icons/fa';
 
