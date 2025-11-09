@@ -16,7 +16,7 @@ export const Home = () => {
                     />
                 </h1>
                 <h3 className="home-subtitle">
-                    Deplanque Yassine <strong className="metier">Étudiant en BTS SIO</strong>
+                    Deplanque Yassine <strong className="metier">Étudiant en cycle ingénieur à Polytech Lille.</strong>
                 </h3>
             </div>
         </div>
